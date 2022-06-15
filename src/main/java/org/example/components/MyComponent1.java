@@ -1,9 +1,9 @@
 package org.example.components;
 
 import org.example.annotations.Autowired;
-import org.example.annotations.MyComponent;
+import org.example.annotations.Component;
 
-@MyComponent
+@Component
 public class MyComponent1 extends ComponentOutput{
 
     @Autowired

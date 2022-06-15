@@ -1,9 +1,9 @@
 package org.example.components;
 
 import org.example.annotations.Autowired;
-import org.example.annotations.MyComponent;
+import org.example.annotations.Component;
 
-@MyComponent
+@Component
 public class MyComponent2 extends ComponentOutput {
 
     @Autowired
@@ -12,7 +12,7 @@ public class MyComponent2 extends ComponentOutput {
     NonComponent nonComponent;
 
     private int testChangeableField = 0;
-    public void increaseChangeAbleField(){
+    public void increaseChangeableField(){
         testChangeableField++;
     }
 

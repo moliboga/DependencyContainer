@@ -11,7 +11,7 @@ public class Main {
             ((MyComponent2) ApplicationContext.getInstance()
                     .getComponents()
                     .get(Class.forName("org.example.components.MyComponent2")))
-                    .increaseChangeAbleField();
+                    .increaseChangeableField();
             ApplicationContext.getInstance()
                     .getComponentsObjects();
         }

@@ -1,7 +1,7 @@
 package org.example;
 
 import org.example.annotations.Autowired;
-import org.example.annotations.MyComponent;
+import org.example.annotations.Component;
 import org.reflections.Reflections;
 import org.reflections.scanners.SubTypesScanner;
 
@@ -30,7 +30,7 @@ public class ApplicationContext {
         List<Class<?>> componentClasses = reflections
                 .getSubTypesOf(Object.class)
                 .stream()
-                .filter(c -> c.isAnnotationPresent(MyComponent.class))
+                .filter(c -> c.isAnnotationPresent(Component.class))
                 .toList();
         components = componentClasses.stream()
                 .collect(Collectors.toMap(c -> c, c -> {
